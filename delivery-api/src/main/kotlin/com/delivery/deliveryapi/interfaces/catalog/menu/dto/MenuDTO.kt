@@ -1,6 +1,6 @@
 package com.delivery.deliveryapi.interfaces.catalog.menu.dto
 
-import com.delivery.deliveryapi.domain.menu.Menu
+import com.delivery.deliveryapi.infrastructure.menu.Menu
 import java.math.BigDecimal
 
 data class MenuDTO(

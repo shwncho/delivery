@@ -1,4 +1,4 @@
-package com.delivery.deliveryapi.domain.menu
+package com.delivery.deliveryapi.infrastructure.menu
 
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.data.jpa.repository.Query

@@ -1,6 +1,6 @@
 package com.delivery.deliveryapi.interfaces.display.dto
 
-import com.delivery.deliveryapi.domain.menu.MenuStatus
+import com.delivery.deliveryapi.infrastructure.menu.MenuStatus
 import java.math.BigDecimal
 
 data class MenuDetailPageResponse(

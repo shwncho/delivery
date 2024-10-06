@@ -1,4 +1,4 @@
-package com.delivery.deliveryapi.domain.store
+package com.delivery.deliveryapi.infrastructure.store
 
 enum class StoreStatus(description: String) {
     INIT("신규매장 준비중"),

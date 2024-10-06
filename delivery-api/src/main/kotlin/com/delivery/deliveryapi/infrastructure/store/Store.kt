@@ -1,6 +1,6 @@
-package com.delivery.deliveryapi.domain.store
+package com.delivery.deliveryapi.infrastructure.store
 
-import com.delivery.deliveryapi.domain.BaseEntity
+import com.delivery.deliveryapi.infrastructure.BaseEntity
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
 import jakarta.persistence.EnumType

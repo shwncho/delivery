@@ -1,4 +1,4 @@
-package com.delivery.deliveryapi.domain.store
+package com.delivery.deliveryapi.infrastructure.store
 
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository

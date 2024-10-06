@@ -1,7 +1,7 @@
 package com.delivery.deliveryapi.interfaces.display
 
 import com.delivery.deliveryapi.application.menu.MenuService
-import com.delivery.deliveryapi.domain.menu.MenuStatus
+import com.delivery.deliveryapi.infrastructure.menu.MenuStatus
 import com.delivery.deliveryapi.interfaces.display.dto.MenuDetailPageResponse
 import io.github.oshai.kotlinlogging.KotlinLogging
 import io.swagger.v3.oas.annotations.tags.Tag

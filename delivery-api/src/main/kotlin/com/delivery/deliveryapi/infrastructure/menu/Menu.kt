@@ -1,4 +1,4 @@
-package com.delivery.deliveryapi.domain.menu
+package com.delivery.deliveryapi.infrastructure.menu
 
 import jakarta.persistence.Column
 import jakarta.persistence.Entity

@@ -1,4 +1,4 @@
-package com.delivery.deliveryapi.domain.menu
+package com.delivery.deliveryapi.infrastructure.menu
 
 enum class MenuStatus(
     val description: String,

@@ -1,4 +1,4 @@
-package com.delivery.deliveryapi.domain
+package com.delivery.deliveryapi.infrastructure
 
 import jakarta.persistence.Column
 import jakarta.persistence.MappedSuperclass
