@@ -27,7 +27,7 @@ class MenuDetailPageController(
             menuName = menu.menuName,
             storeId = menu.storeId,
             description = menu.description,
-            menuMainImageUrl = menu.menuMainImageUrl,
+            menuMainImageUrl = menu.menuImageUrl,
             price = menu.price,
             menuStatue = MenuStatus.SALE,
         )

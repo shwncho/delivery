@@ -1,6 +1,6 @@
 package com.delivery.deliveryapi.interfaces.catalog.menu.dto
 
-import com.delivery.deliveryapi.infrastructure.menu.Menu
+import com.delivery.deliveryapi.application.menu.dto.MenuResponse
 import java.math.BigDecimal
 
 data class MenuDTO(
@@ -12,14 +12,14 @@ data class MenuDTO(
     val menuImageUrl: String,
 ) {
     companion object {
-        fun from(menu: Menu): MenuDTO {
+        fun from(menuResponse: MenuResponse): MenuDTO {
             return MenuDTO(
-                menuId = menu.menuId,
-                menuName = menu.menuName,
-                storeId = menu.storeId,
-                price = menu.price,
-                description = menu.description,
-                menuImageUrl = menu.menuMainImageUrl,
+                menuId = menuResponse.menuId,
+                menuName = menuResponse.menuName,
+                storeId = menuResponse.storeId,
+                price = menuResponse.price,
+                description = menuResponse.description,
+                menuImageUrl = menuResponse.menuImageUrl,
             )
         }
     }

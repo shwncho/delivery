@@ -19,22 +19,22 @@ class StoreDetailPageController(
     @GetMapping("/apis/display/stores/{storeId}")
     fun list(@PathVariable storeId: Long): StoreDetailPageResponse {
 
-        val store = storeService.findByStoreId(storeId)
+        val storeResponse = storeService.findByStoreId(storeId)
 
-        val menus = menuService.findByStoreId(storeId)
-        val menuDTOs = menus.map { MenuDTO.from(it) }
+        val menuResponses = menuService.findByStoreId(storeId)
+        val menuDTOs = menuResponses.map { MenuDTO.from(it) }
 
         return StoreDetailPageResponse(
             storeId = storeId,
-            storeName = store.storeName,
-            phone = store.storePhone,
-            address = store.address,
-            storeMainImageUrl = store.storeMainImageUrl,
-            description = store.description,
-            deliveryFee = store.deliveryFee,
-            deliveryTime = store.deliveryTime,
-            reviewGrade = store.reviewGrade,
-            minimumOrderPrice = store.minimumOrderPrice,
+            storeName = storeResponse.storeName,
+            phone = storeResponse.phone,
+            address = storeResponse.address,
+            storeMainImageUrl = storeResponse.storeMainImageUrl,
+            description = storeResponse.description,
+            deliveryFee = storeResponse.deliveryFee,
+            deliveryTime = storeResponse.deliveryTime,
+            reviewGrade = storeResponse.reviewGrade,
+            minimumOrderPrice = storeResponse.minimumOrderPrice,
             menus = menuDTOs,
         )
     }
